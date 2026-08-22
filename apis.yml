@@ -1,8 +1,20 @@
 aid: hzo
 name: HZO
-description: 'HZO is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  HZO is a protective coating company specializing in Parylene and thin-film conformal
+  coatings that safeguard electronics from moisture, humidity, salt fog, corrosion, and
+  harsh chemicals. Founded in Salt Lake City and now headquartered in Raleigh, North
+  Carolina, HZO delivers turnkey coating services and manufacturing solutions across
+  consumer electronics, automotive and mobility, industrial, medical device, IoT, and
+  battery markets, with coating facilities and centers of excellence in the United States,
+  Hungary, China, and Vietnam. HZO is a physical-materials and contract-manufacturing
+  business ("Protection from the Inside Out") rather than a software vendor: it publishes
+  no public developer program, API, or machine-readable API contract. This profile records
+  the public web hygiene surface it does serve — an llms.txt discovery file, an RFC 9116
+  security.txt, and domain security posture.
 url: https://raw.githubusercontent.com/api-evangelist/hzo/refs/heads/main/apis.yml
+image: https://hzo.com/hs-fs/hubfs/hzo-logo-1.png
+humanURL: https://hzo.com/
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +24,13 @@ created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Electronics
+- Manufacturing
+- Coatings
+- Parylene
+- Materials Science
+- Conformal Coating
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,44 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://hzo.com/
+- type: Blog
+  url: https://hzo.com/blog
+- type: Support
+  url: https://hzo.com/contact-us
+- type: PrivacyPolicy
+  url: https://hzo.com/privacy-policy
+- type: TermsOfService
+  url: https://hzo.com/terms
+- type: LLMsTxt
+  url: llms/hzo-llms.txt
+- type: WellKnown
+  url: well-known/hzo-well-known.yml
+- type: SecurityTxt
+  url: well-known/hzo-security.txt
+- type: Security
+  url: https://hzo.com/.well-known/security.txt
+- type: VulnerabilityDisclosure
+  url: security/hzo-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/hzo-domain-security.yml
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    HZO is a physical Parylene / thin-film conformal-coating manufacturer and contract
+    coating service; hzo.com serves marketing, blog, and legal pages plus an llms.txt and
+    security.txt but exposes no developer portal, API host, or machine-readable contract.
+  evidence:
+  - url: https://hzo.com/openapi.json
+    status: 404
+  - url: https://hzo.com/llms.txt
+    status: 200
+  - url: https://hzo.com/.well-known/security.txt
+    status: 200
+  checked: '2026-08-22'

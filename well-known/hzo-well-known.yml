@@ -1,0 +1,26 @@
+generated: '2026-08-22'
+method: searched
+source: https://hzo.com/.well-known/
+hosts:
+- host: https://hzo.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: hzo-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+note: >-
+  hzo.com serves a genuine RFC 9116 security.txt (Contact/Expires/Canonical), saved verbatim.
+  All other /.well-known/* paths return the SPA 404 shell (48KB HTML), recorded as absent.
+  HZO is a physical parylene/thin-film coating manufacturer with no developer API surface;
+  there is no OAuth/OpenID/API-catalog surface to discover.
