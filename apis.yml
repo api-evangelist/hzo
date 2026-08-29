@@ -13,6 +13,17 @@ description: >-
   the public web hygiene surface it does serve — an llms.txt discovery file, an RFC 9116
   security.txt, and domain security posture.
 url: https://raw.githubusercontent.com/api-evangelist/hzo/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://hzo.com/hs-fs/hubfs/hzo-logo-1.png
 humanURL: https://hzo.com/
 x-type: company
